@@ -12,6 +12,12 @@
 		3F0DD5A12059530500EF893F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0DD59F2059530500EF893F /* Main.storyboard */; };
 		3F0DD5A32059530500EF893F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0DD5A22059530500EF893F /* Assets.xcassets */; };
 		3F0DD5A62059530500EF893F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0DD5A42059530500EF893F /* LaunchScreen.storyboard */; };
+		5FFD2018206A68B600BFB5F7 /* WeightEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2017206A68B600BFB5F7 /* WeightEnum.swift */; };
+		5FFD201A206A6CEA00BFB5F7 /* TempreatureEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2019206A6CEA00BFB5F7 /* TempreatureEnum.swift */; };
+		5FFD201C206A6E9400BFB5F7 /* VolumeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD201B206A6E9400BFB5F7 /* VolumeEnum.swift */; };
+		5FFD201E206A6FD200BFB5F7 /* VolumeLiquidEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD201D206A6FD200BFB5F7 /* VolumeLiquidEnum.swift */; };
+		5FFD2020206A717100BFB5F7 /* DistanceEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD201F206A717100BFB5F7 /* DistanceEnum.swift */; };
+		5FFD2022206A72D600BFB5F7 /* SpeedEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2021206A72D600BFB5F7 /* SpeedEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		3F0DD5A22059530500EF893F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F0DD5A52059530500EF893F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F0DD5A72059530500EF893F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FFD2017206A68B600BFB5F7 /* WeightEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEnum.swift; sourceTree = "<group>"; };
+		5FFD2019206A6CEA00BFB5F7 /* TempreatureEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempreatureEnum.swift; sourceTree = "<group>"; };
+		5FFD201B206A6E9400BFB5F7 /* VolumeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeEnum.swift; sourceTree = "<group>"; };
+		5FFD201D206A6FD200BFB5F7 /* VolumeLiquidEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeLiquidEnum.swift; sourceTree = "<group>"; };
+		5FFD201F206A717100BFB5F7 /* DistanceEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceEnum.swift; sourceTree = "<group>"; };
+		5FFD2021206A72D600BFB5F7 /* SpeedEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		3F0DD59A2059530500EF893F /* Utility Converter */ = {
 			isa = PBXGroup;
 			children = (
+				5FFD2016206A685400BFB5F7 /* Common */,
 				9AF569E62067A66100224DF0 /* Resources */,
 				3F0DD59B2059530500EF893F /* AppDelegate.swift */,
 				3F0DD59D2059530500EF893F /* ViewController.swift */,
@@ -63,6 +76,19 @@
 				3F0DD5A72059530500EF893F /* Info.plist */,
 			);
 			path = "Utility Converter";
+			sourceTree = "<group>";
+		};
+		5FFD2016206A685400BFB5F7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5FFD2017206A68B600BFB5F7 /* WeightEnum.swift */,
+				5FFD2019206A6CEA00BFB5F7 /* TempreatureEnum.swift */,
+				5FFD201B206A6E9400BFB5F7 /* VolumeEnum.swift */,
+				5FFD201D206A6FD200BFB5F7 /* VolumeLiquidEnum.swift */,
+				5FFD201F206A717100BFB5F7 /* DistanceEnum.swift */,
+				5FFD2021206A72D600BFB5F7 /* SpeedEnum.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		9AF569E62067A66100224DF0 /* Resources */ = {
@@ -110,6 +136,7 @@
 					1000,
 					100000,
 					2000,
+					200000,
 					3000,
 					4000,
 					5000,
@@ -161,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FFD2022206A72D600BFB5F7 /* SpeedEnum.swift in Sources */,
+				5FFD2020206A717100BFB5F7 /* DistanceEnum.swift in Sources */,
 				3F0DD59E2059530500EF893F /* ViewController.swift in Sources */,
 				3F0DD59C2059530500EF893F /* AppDelegate.swift in Sources */,
+				5FFD201E206A6FD200BFB5F7 /* VolumeLiquidEnum.swift in Sources */,
+				5FFD2018206A68B600BFB5F7 /* WeightEnum.swift in Sources */,
+				5FFD201A206A6CEA00BFB5F7 /* TempreatureEnum.swift in Sources */,
+				5FFD201C206A6E9400BFB5F7 /* VolumeEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
