@@ -51,6 +51,7 @@ class ViewController: UIViewController {
     @IBOutlet var kmHourText: [UITextField]!
     @IBOutlet var meterSecText: [UITextField]!
     
+    
     //button
     @IBOutlet weak var buttonOne: UIButton!
     
