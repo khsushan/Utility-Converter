@@ -8,5 +8,5 @@
 
 import Foundation
 enum VolumeEnum : Int {
-    case m3 = 100000, liter = 110000, kelvin = 120000
+    case m3 = 100000, liter = 110000, cm3 = 120000
 }

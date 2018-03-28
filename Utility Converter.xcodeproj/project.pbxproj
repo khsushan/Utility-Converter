@@ -30,6 +30,7 @@
 		5FFD2037206BF37700BFB5F7 /* DistanceConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2036206BF37700BFB5F7 /* DistanceConverter.swift */; };
 		5FFD2039206C06E300BFB5F7 /* VolumeLiquidConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2038206C06E300BFB5F7 /* VolumeLiquidConverter.swift */; };
 		5FFD203B206C088C00BFB5F7 /* VolumeLiquid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD203A206C088C00BFB5F7 /* VolumeLiquid.swift */; };
+		5FFD203D206C103D00BFB5F7 /* VolumeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD203C206C103D00BFB5F7 /* VolumeConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		5FFD2036206BF37700BFB5F7 /* DistanceConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConverter.swift; sourceTree = "<group>"; };
 		5FFD2038206C06E300BFB5F7 /* VolumeLiquidConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeLiquidConverter.swift; sourceTree = "<group>"; };
 		5FFD203A206C088C00BFB5F7 /* VolumeLiquid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeLiquid.swift; sourceTree = "<group>"; };
+		5FFD203C206C103D00BFB5F7 /* VolumeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				5FFD2032206BC53700BFB5F7 /* WeightConverter.swift */,
 				5FFD2036206BF37700BFB5F7 /* DistanceConverter.swift */,
 				5FFD2038206C06E300BFB5F7 /* VolumeLiquidConverter.swift */,
+				5FFD203C206C103D00BFB5F7 /* VolumeConverter.swift */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FFD2033206BC53700BFB5F7 /* WeightConverter.swift in Sources */,
+				5FFD203D206C103D00BFB5F7 /* VolumeConverter.swift in Sources */,
 				5FFD2022206A72D600BFB5F7 /* SpeedEnum.swift in Sources */,
 				5FFD2020206A717100BFB5F7 /* DistanceEnum.swift in Sources */,
 				3F0DD59E2059530500EF893F /* ViewController.swift in Sources */,
