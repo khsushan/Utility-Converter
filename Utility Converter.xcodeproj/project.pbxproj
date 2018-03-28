@@ -28,6 +28,8 @@
 		5FFD2033206BC53700BFB5F7 /* WeightConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2032206BC53700BFB5F7 /* WeightConverter.swift */; };
 		5FFD2035206BEF1400BFB5F7 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2034206BEF1400BFB5F7 /* Distance.swift */; };
 		5FFD2037206BF37700BFB5F7 /* DistanceConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2036206BF37700BFB5F7 /* DistanceConverter.swift */; };
+		5FFD2039206C06E300BFB5F7 /* VolumeLiquidConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2038206C06E300BFB5F7 /* VolumeLiquidConverter.swift */; };
+		5FFD203B206C088C00BFB5F7 /* VolumeLiquid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD203A206C088C00BFB5F7 /* VolumeLiquid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		5FFD2032206BC53700BFB5F7 /* WeightConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightConverter.swift; sourceTree = "<group>"; };
 		5FFD2034206BEF1400BFB5F7 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		5FFD2036206BF37700BFB5F7 /* DistanceConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConverter.swift; sourceTree = "<group>"; };
+		5FFD2038206C06E300BFB5F7 /* VolumeLiquidConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeLiquidConverter.swift; sourceTree = "<group>"; };
+		5FFD203A206C088C00BFB5F7 /* VolumeLiquid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeLiquid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 			children = (
 				5FFD202F206BB3EA00BFB5F7 /* Weight.swift */,
 				5FFD2034206BEF1400BFB5F7 /* Distance.swift */,
+				5FFD203A206C088C00BFB5F7 /* VolumeLiquid.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			children = (
 				5FFD2032206BC53700BFB5F7 /* WeightConverter.swift */,
 				5FFD2036206BF37700BFB5F7 /* DistanceConverter.swift */,
+				5FFD2038206C06E300BFB5F7 /* VolumeLiquidConverter.swift */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -253,11 +259,13 @@
 				5FFD201E206A6FD200BFB5F7 /* VolumeLiquidEnum.swift in Sources */,
 				46376946206B991B0055168C /* DistanceController.swift in Sources */,
 				5FFD2029206BA9B900BFB5F7 /* VolumeLiquidController.swift in Sources */,
+				5FFD2039206C06E300BFB5F7 /* VolumeLiquidConverter.swift in Sources */,
 				5FFD2018206A68B600BFB5F7 /* WeightEnum.swift in Sources */,
 				5FFD201A206A6CEA00BFB5F7 /* TempreatureEnum.swift in Sources */,
 				5FFD2027206BA98900BFB5F7 /* VolumeController.swift in Sources */,
 				5FFD2035206BEF1400BFB5F7 /* Distance.swift in Sources */,
 				5FFD2030206BB3EA00BFB5F7 /* Weight.swift in Sources */,
+				5FFD203B206C088C00BFB5F7 /* VolumeLiquid.swift in Sources */,
 				5FFD201C206A6E9400BFB5F7 /* VolumeEnum.swift in Sources */,
 				5FFD2037206BF37700BFB5F7 /* DistanceConverter.swift in Sources */,
 			);

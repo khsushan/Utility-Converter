@@ -567,24 +567,36 @@
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="volumeLiquidTextEditChange:" destination="fGp-9h-OhU" eventType="editingChanged" id="Bqc-d1-zUL"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="140000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-ua-XzY">
                                             <rect key="frame" x="0.0" y="35" width="253.5" height="30.5"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="volumeLiquidTextEditChange:" destination="fGp-9h-OhU" eventType="editingChanged" id="dRx-hQ-k8F"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="150000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yWY-RS-lL0">
                                             <rect key="frame" x="0.0" y="69.5" width="253.5" height="31"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="volumeLiquidTextEditChange:" destination="fGp-9h-OhU" eventType="editingChanged" id="fJG-o6-8mb"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="160000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSj-DT-69v">
                                             <rect key="frame" x="0.0" y="104.5" width="253.5" height="30.5"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="volumeLiquidTextEditChange:" destination="fGp-9h-OhU" eventType="editingChanged" id="W7l-1B-Vfd"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -599,6 +611,12 @@
                         <constraint firstItem="AEr-fK-ALn" firstAttribute="trailing" secondItem="M7G-9e-bTS" secondAttribute="trailing" constant="8" id="wwb-Zu-HEg"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="AEr-fK-ALn"/>
+                    <connections>
+                        <outlet property="fluidOunceText" destination="pSj-DT-69v" id="DGw-cJ-81c"/>
+                        <outlet property="galoonText" destination="4Uy-5q-isD" id="chc-EC-b02"/>
+                        <outlet property="literLiquidText" destination="LLr-ua-XzY" id="alF-gl-tbF"/>
+                        <outlet property="pintText" destination="yWY-RS-lL0" id="Dsf-1G-3ch"/>
+                    </connections>
                 </view>
                 <view contentMode="scaleToFill" id="M71-XC-xdC" userLabel="Speed View" customClass="SpeedController" customModule="Utility_Converter" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="371" height="117"/>
