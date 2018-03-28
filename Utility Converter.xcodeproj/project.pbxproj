@@ -20,6 +20,12 @@
 		5FFD201E206A6FD200BFB5F7 /* VolumeLiquidEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD201D206A6FD200BFB5F7 /* VolumeLiquidEnum.swift */; };
 		5FFD2020206A717100BFB5F7 /* DistanceEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD201F206A717100BFB5F7 /* DistanceEnum.swift */; };
 		5FFD2022206A72D600BFB5F7 /* SpeedEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2021206A72D600BFB5F7 /* SpeedEnum.swift */; };
+		5FFD2027206BA98900BFB5F7 /* VolumeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2026206BA98900BFB5F7 /* VolumeController.swift */; };
+		5FFD2029206BA9B900BFB5F7 /* VolumeLiquidController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2028206BA9B900BFB5F7 /* VolumeLiquidController.swift */; };
+		5FFD202B206BA9D000BFB5F7 /* SpeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD202A206BA9D000BFB5F7 /* SpeedController.swift */; };
+		5FFD202D206BA9F400BFB5F7 /* TempreatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD202C206BA9F400BFB5F7 /* TempreatureController.swift */; };
+		5FFD2030206BB3EA00BFB5F7 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD202F206BB3EA00BFB5F7 /* Weight.swift */; };
+		5FFD2033206BC53700BFB5F7 /* WeightConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2032206BC53700BFB5F7 /* WeightConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		5FFD201D206A6FD200BFB5F7 /* VolumeLiquidEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeLiquidEnum.swift; sourceTree = "<group>"; };
 		5FFD201F206A717100BFB5F7 /* DistanceEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceEnum.swift; sourceTree = "<group>"; };
 		5FFD2021206A72D600BFB5F7 /* SpeedEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedEnum.swift; sourceTree = "<group>"; };
+		5FFD2026206BA98900BFB5F7 /* VolumeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeController.swift; sourceTree = "<group>"; };
+		5FFD2028206BA9B900BFB5F7 /* VolumeLiquidController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeLiquidController.swift; sourceTree = "<group>"; };
+		5FFD202A206BA9D000BFB5F7 /* SpeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedController.swift; sourceTree = "<group>"; };
+		5FFD202C206BA9F400BFB5F7 /* TempreatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempreatureController.swift; sourceTree = "<group>"; };
+		5FFD202F206BB3EA00BFB5F7 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		5FFD2032206BC53700BFB5F7 /* WeightConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,8 @@
 		3F0DD59A2059530500EF893F /* Utility Converter */ = {
 			isa = PBXGroup;
 			children = (
+				5FFD2031206BC50100BFB5F7 /* Converter */,
+				5FFD202E206BB3C700BFB5F7 /* Model */,
 				46376942206B973C0055168C /* Subview Controller */,
 				5FFD2016206A685400BFB5F7 /* Common */,
 				9AF569E62067A66100224DF0 /* Resources */,
@@ -88,6 +102,10 @@
 			children = (
 				46376943206B978C0055168C /* WeightController.swift */,
 				46376945206B991B0055168C /* DistanceController.swift */,
+				5FFD2026206BA98900BFB5F7 /* VolumeController.swift */,
+				5FFD2028206BA9B900BFB5F7 /* VolumeLiquidController.swift */,
+				5FFD202A206BA9D000BFB5F7 /* SpeedController.swift */,
+				5FFD202C206BA9F400BFB5F7 /* TempreatureController.swift */,
 			);
 			path = "Subview Controller";
 			sourceTree = "<group>";
@@ -103,6 +121,22 @@
 				5FFD2021206A72D600BFB5F7 /* SpeedEnum.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		5FFD202E206BB3C700BFB5F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FFD202F206BB3EA00BFB5F7 /* Weight.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FFD2031206BC50100BFB5F7 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				5FFD2032206BC53700BFB5F7 /* WeightConverter.swift */,
+			);
+			path = Converter;
 			sourceTree = "<group>";
 		};
 		9AF569E62067A66100224DF0 /* Resources */ = {
@@ -202,15 +236,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FFD2033206BC53700BFB5F7 /* WeightConverter.swift in Sources */,
 				5FFD2022206A72D600BFB5F7 /* SpeedEnum.swift in Sources */,
 				5FFD2020206A717100BFB5F7 /* DistanceEnum.swift in Sources */,
 				3F0DD59E2059530500EF893F /* ViewController.swift in Sources */,
 				46376944206B978C0055168C /* WeightController.swift in Sources */,
+				5FFD202B206BA9D000BFB5F7 /* SpeedController.swift in Sources */,
 				3F0DD59C2059530500EF893F /* AppDelegate.swift in Sources */,
+				5FFD202D206BA9F400BFB5F7 /* TempreatureController.swift in Sources */,
 				5FFD201E206A6FD200BFB5F7 /* VolumeLiquidEnum.swift in Sources */,
 				46376946206B991B0055168C /* DistanceController.swift in Sources */,
+				5FFD2029206BA9B900BFB5F7 /* VolumeLiquidController.swift in Sources */,
 				5FFD2018206A68B600BFB5F7 /* WeightEnum.swift in Sources */,
 				5FFD201A206A6CEA00BFB5F7 /* TempreatureEnum.swift in Sources */,
+				5FFD2027206BA98900BFB5F7 /* VolumeController.swift in Sources */,
+				5FFD2030206BB3EA00BFB5F7 /* Weight.swift in Sources */,
 				5FFD201C206A6E9400BFB5F7 /* VolumeEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
