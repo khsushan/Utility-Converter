@@ -63,54 +63,54 @@ class Weight{
         switch type {
         case WeightEnum.kg:
             Kg = inputValue
-            Gram = inputValue / WeightConverter.KgConversionValue(weightType: .gram)
-            Pound = inputValue / WeightConverter.KgConversionValue(weightType: .pound)
-            Ounce = inputValue / WeightConverter.KgConversionValue(weightType: .ounce)
-            Stone = inputValue /  WeightConverter.KgConversionValue(weightType: .stone)
-            SmallPound = inputValue /  WeightConverter.KgConversionValue(weightType: .poundSmall)
+            Gram = inputValue * WeightConverter.KgConversionValue(weightType: .gram)
+            Pound = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
+            Ounce = inputValue * WeightConverter.KgConversionValue(weightType: .ounce)
+            Stone = inputValue *  WeightConverter.KgConversionValue(weightType: .stone)
+            SmallPound = inputValue *  WeightConverter.KgConversionValue(weightType: .poundSmall)
         case WeightEnum.pound :
             Pound = inputValue
-            Kg = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
+            Kg = inputValue / WeightConverter.KgConversionValue(weightType: .pound)
             inputValue = Kg
-            Gram = inputValue / WeightConverter.KgConversionValue(weightType: .gram)
-            Ounce = inputValue / WeightConverter.KgConversionValue(weightType: .ounce)
-            Stone = inputValue /  WeightConverter.KgConversionValue(weightType: .stone)
-            SmallPound = inputValue /  WeightConverter.KgConversionValue(weightType: .poundSmall)
+            Gram = inputValue * WeightConverter.KgConversionValue(weightType: .gram)
+            Ounce = inputValue * WeightConverter.KgConversionValue(weightType: .ounce)
+            Stone = inputValue *  WeightConverter.KgConversionValue(weightType: .stone)
+            SmallPound = inputValue *  WeightConverter.KgConversionValue(weightType: .poundSmall)
             break;
         case WeightEnum.ounce :
             Ounce = inputValue
-            Kg = inputValue * WeightConverter.KgConversionValue(weightType: .ounce)
+            Kg = inputValue / WeightConverter.KgConversionValue(weightType: .ounce)
             inputValue = Kg
-            Gram = inputValue / WeightConverter.KgConversionValue(weightType: .gram)
-            Pound = inputValue / WeightConverter.KgConversionValue(weightType: .pound)
-            Stone = inputValue /  WeightConverter.KgConversionValue(weightType: .stone)
-            SmallPound = inputValue /  WeightConverter.KgConversionValue(weightType: .poundSmall)
+            Gram = inputValue * WeightConverter.KgConversionValue(weightType: .gram)
+            Pound = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
+            Stone = inputValue *  WeightConverter.KgConversionValue(weightType: .stone)
+            SmallPound = inputValue *  WeightConverter.KgConversionValue(weightType: .poundSmall)
             break;
         case WeightEnum.gram :
             Gram = inputValue
-            Kg = inputValue * WeightConverter.KgConversionValue(weightType: .gram)
+            Kg = inputValue / WeightConverter.KgConversionValue(weightType: .gram)
             inputValue = Kg
-            Ounce = inputValue / WeightConverter.KgConversionValue(weightType: .gram)
-            Pound = inputValue / WeightConverter.KgConversionValue(weightType: .pound)
-            Stone = inputValue /  WeightConverter.KgConversionValue(weightType: .stone)
-            SmallPound = inputValue /  WeightConverter.KgConversionValue(weightType: .poundSmall)
+            Ounce = inputValue * WeightConverter.KgConversionValue(weightType: .ounce)
+            Pound = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
+            Stone = inputValue *  WeightConverter.KgConversionValue(weightType: .stone)
+            SmallPound = inputValue *  WeightConverter.KgConversionValue(weightType: .poundSmall)
             break;
         case WeightEnum.stone :
             Stone = inputValue
-            Kg = inputValue * WeightConverter.KgConversionValue(weightType: .stone)
+            Kg = inputValue / WeightConverter.KgConversionValue(weightType: .stone)
             inputValue = Kg
-            Ounce = inputValue / WeightConverter.KgConversionValue(weightType: .gram)
-            Pound = inputValue / WeightConverter.KgConversionValue(weightType: .pound)
-            Gram = inputValue /  WeightConverter.KgConversionValue(weightType: .stone)
-            SmallPound = inputValue /  WeightConverter.KgConversionValue(weightType: .poundSmall)
+            Ounce = inputValue * WeightConverter.KgConversionValue(weightType: .ounce)
+            Pound = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
+            Gram = inputValue *  WeightConverter.KgConversionValue(weightType: .gram)
+            SmallPound = inputValue *  WeightConverter.KgConversionValue(weightType: .poundSmall)
             break;
         case WeightEnum.poundSmall :
             SmallPound = inputValue
-            Kg = inputValue * WeightConverter.KgConversionValue(weightType: .poundSmall)
+            Kg = inputValue / WeightConverter.KgConversionValue(weightType: .poundSmall)
             inputValue = Kg
-            Ounce = inputValue / WeightConverter.KgConversionValue(weightType: .gram)
-            Pound = inputValue / WeightConverter.KgConversionValue(weightType: .pound)
-            Gram = inputValue /  WeightConverter.KgConversionValue(weightType: .stone)
+            Ounce = inputValue * WeightConverter.KgConversionValue(weightType: .gram)
+            Pound = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
+            Gram = inputValue *  WeightConverter.KgConversionValue(weightType: .stone)
             break;
         }
     }

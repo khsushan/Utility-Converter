@@ -10,12 +10,22 @@ import UIKit
 
 class DistanceController: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var cmText: UITextField!
+    @IBOutlet var meterText: UITextField!
+    @IBOutlet var inchText: UITextField!
+    @IBOutlet var mmText: UITextField!
+    @IBOutlet var yardText: UITextField!
+    
+    @IBAction func distanceViewEditChange(_ sender: UITextField) {
+        let model : Distance = Distance();
+        model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
+        model.Tag = sender.tag
+        model.Convert();
+        cmText.text = String(model.Cm)
+        meterText.text = String(model.Meter)
+        mmText.text = String(model.Mm)
+        yardText.text = String(model.Yard)
+        inchText.text = String(model.Inch)
     }
-    */
-
+    
 }

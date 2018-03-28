@@ -397,30 +397,45 @@
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="distanceViewEditChange:" destination="sIc-Zh-YMA" eventType="editingChanged" id="r4I-V9-mBd"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="180000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Qd-6I-fZI">
                                             <rect key="frame" x="0.0" y="37.5" width="300" height="33.5"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="distanceViewEditChange:" destination="sIc-Zh-YMA" eventType="editingChanged" id="RXC-92-shc"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="190000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8eI-zy-dvv">
                                             <rect key="frame" x="0.0" y="75" width="300" height="33"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="distanceViewEditChange:" destination="sIc-Zh-YMA" eventType="editingChanged" id="tdP-0U-fzt"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="200000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DzH-CN-NOt">
                                             <rect key="frame" x="0.0" y="112" width="300" height="33.5"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="distanceViewEditChange:" destination="sIc-Zh-YMA" eventType="editingChanged" id="cRf-rm-Qnl"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="210000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AwF-rG-xCO">
                                             <rect key="frame" x="0.0" y="149.5" width="300" height="33.5"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="distanceViewEditChange:" destination="sIc-Zh-YMA" eventType="editingChanged" id="RmX-WT-8FA"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -435,6 +450,13 @@
                         <constraint firstItem="aK3-cw-Ijh" firstAttribute="bottom" secondItem="nmQ-ta-Xmx" secondAttribute="bottom" constant="4" id="ihl-tC-33D"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="aK3-cw-Ijh"/>
+                    <connections>
+                        <outlet property="cmText" destination="sl1-lx-MoO" id="kqd-Q3-rEO"/>
+                        <outlet property="inchText" destination="8eI-zy-dvv" id="KBT-U0-YM1"/>
+                        <outlet property="meterText" destination="0Qd-6I-fZI" id="LcK-qm-adQ"/>
+                        <outlet property="mmText" destination="DzH-CN-NOt" id="xN2-gU-qJO"/>
+                        <outlet property="yardText" destination="AwF-rG-xCO" id="Xm1-Cb-7op"/>
+                    </connections>
                 </view>
                 <view contentMode="scaleToFill" id="gjy-n2-Yfb" userLabel="Volume View" customClass="VolumeController" customModule="Utility_Converter" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="371" height="104"/>
