@@ -9,13 +9,19 @@
 import UIKit
 
 class VolumeController: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var cubicMeterText: UITextField!
+    @IBOutlet weak var cubicCentimeterText: UITextField!
+    @IBOutlet weak var literText: UITextField!
+    
+    
+    @IBAction func volumeViewEditChange(_ sender: UITextField) {
+        let model : Volume = Volume();
+        model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
+        model.Tag = sender.tag
+        model.Convert();
+        cubicMeterText.text = String(model.CubicMeter)
+        cubicCentimeterText.text = String(model.CubicCentimeter)
+        literText.text = String(model.Liter)
     }
-    */
-
+    
 }

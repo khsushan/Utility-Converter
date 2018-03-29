@@ -496,18 +496,27 @@
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="volumeViewEditChange:" destination="gjy-n2-Yfb" eventType="editingChanged" id="djm-ij-7qr"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="110000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WkH-Yg-1VG">
                                             <rect key="frame" x="0.0" y="33.5" width="311" height="29"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="volumeViewEditChange:" destination="gjy-n2-Yfb" eventType="editingChanged" id="Sc7-50-ZQl"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="120000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2w-tN-KPx">
                                             <rect key="frame" x="0.0" y="66.5" width="311" height="29.5"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="volumeViewEditChange:" destination="gjy-n2-Yfb" eventType="editingChanged" id="cwf-3L-TIk"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -522,6 +531,11 @@
                         <constraint firstItem="g9W-aJ-mSJ" firstAttribute="leading" secondItem="EmM-Q0-iJH" secondAttribute="leading" constant="8" id="xjg-Jb-WAh"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="EmM-Q0-iJH"/>
+                    <connections>
+                        <outlet property="cubicCentimeterText" destination="q2w-tN-KPx" id="Zdr-gq-PE8"/>
+                        <outlet property="cubicMeterText" destination="QKx-7V-fJF" id="jWE-uf-3KK"/>
+                        <outlet property="literText" destination="WkH-Yg-1VG" id="3yF-ft-mhj"/>
+                    </connections>
                 </view>
                 <view contentMode="scaleToFill" id="fGp-9h-OhU" userLabel="Volume Liquid View" customClass="VolumeLiquidController" customModule="Utility_Converter" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="371" height="143"/>

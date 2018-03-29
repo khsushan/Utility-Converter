@@ -31,6 +31,7 @@
 		5FFD2039206C06E300BFB5F7 /* VolumeLiquidConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2038206C06E300BFB5F7 /* VolumeLiquidConverter.swift */; };
 		5FFD203B206C088C00BFB5F7 /* VolumeLiquid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD203A206C088C00BFB5F7 /* VolumeLiquid.swift */; };
 		5FFD203D206C103D00BFB5F7 /* VolumeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD203C206C103D00BFB5F7 /* VolumeConverter.swift */; };
+		5FFD203F206CC9B400BFB5F7 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD203E206CC9B400BFB5F7 /* Volume.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		5FFD2038206C06E300BFB5F7 /* VolumeLiquidConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeLiquidConverter.swift; sourceTree = "<group>"; };
 		5FFD203A206C088C00BFB5F7 /* VolumeLiquid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeLiquid.swift; sourceTree = "<group>"; };
 		5FFD203C206C103D00BFB5F7 /* VolumeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeConverter.swift; sourceTree = "<group>"; };
+		5FFD203E206CC9B400BFB5F7 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				5FFD202F206BB3EA00BFB5F7 /* Weight.swift */,
 				5FFD2034206BEF1400BFB5F7 /* Distance.swift */,
 				5FFD203A206C088C00BFB5F7 /* VolumeLiquid.swift */,
+				5FFD203E206CC9B400BFB5F7 /* Volume.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				5FFD2035206BEF1400BFB5F7 /* Distance.swift in Sources */,
 				5FFD2030206BB3EA00BFB5F7 /* Weight.swift in Sources */,
 				5FFD203B206C088C00BFB5F7 /* VolumeLiquid.swift in Sources */,
+				5FFD203F206CC9B400BFB5F7 /* Volume.swift in Sources */,
 				5FFD201C206A6E9400BFB5F7 /* VolumeEnum.swift in Sources */,
 				5FFD2037206BF37700BFB5F7 /* DistanceConverter.swift in Sources */,
 			);
