@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VolumeLiquidController: UIView {
+class VolumeLiquidController: BaseSubView {
 
     @IBOutlet var galoonText: UITextField!
     @IBOutlet var literLiquidText: UITextField!
@@ -27,5 +27,12 @@ class VolumeLiquidController: UIView {
     }
     
     
+    @IBAction func volumeLiquidViewEditingBegin(_ sender: UITextField) {
+        currentTextField = sender;
+    }
+    
+    override func editChanged(sender: UITextField) {
+        volumeLiquidTextEditChange(sender)
+    }
 
 }

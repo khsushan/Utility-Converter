@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TempreatureController: UIView {
+class TempreatureController: BaseSubView {
     @IBOutlet var celsiusText: UITextField!
     @IBOutlet var kelvinText: UITextField!
     @IBOutlet var fahrenheitText: UITextField!
@@ -21,6 +21,15 @@ class TempreatureController: UIView {
         celsiusText.text = String(model.Celsius)
         kelvinText.text = String(model.Kelvin)
         fahrenheitText.text = String(model.Farenhite)
+    }
+    
+    
+    @IBAction func tempreatureViewEditBegin(_ sender: UITextField) {
+        currentTextField = sender;
+    }
+    
+    override func editChanged(sender: UITextField) {
+        tempreatureViewEditChange(sender);
     }
     
 }

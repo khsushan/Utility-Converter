@@ -32,20 +32,29 @@
                                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonOnePress:" destination="BYZ-38-t0r" eventType="touchDown" id="WB3-2B-fCx"/>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="WB3-2B-fCx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJO-Mu-Bx4">
                                                 <rect key="frame" x="0.0" y="50" width="119.5" height="50"/>
                                                 <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="aew-Sq-pVZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzu-nl-YP7">
                                                 <rect key="frame" x="0.0" y="100" width="119.5" height="50"/>
                                                 <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="GxZ-DQ-fOG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lj-Fq-pEZ">
                                                 <rect key="frame" x="0.0" y="150" width="119.5" height="50"/>
                                                 <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="xwt-T5-0ao"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,18 +65,30 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyB-zc-mqf">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
                                                 <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="Tef-to-tf4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyP-ka-vc1">
                                                 <rect key="frame" x="0.0" y="50" width="120" height="50"/>
                                                 <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="jXw-MY-Rn1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDM-Qy-cGn">
                                                 <rect key="frame" x="0.0" y="100" width="120" height="50"/>
                                                 <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="sfU-Uv-ClE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xz-CE-9Q3">
                                                 <rect key="frame" x="0.0" y="150" width="120" height="50"/>
                                                 <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="0fw-3c-Wdy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -77,14 +98,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwy-gF-aa7">
                                                 <rect key="frame" x="0.0" y="0.0" width="119.5" height="50"/>
                                                 <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="HbV-e0-iuV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwq-0v-9Dn">
                                                 <rect key="frame" x="0.0" y="50" width="119.5" height="50"/>
                                                 <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="Hxk-vc-q2x"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaV-KO-riN">
                                                 <rect key="frame" x="0.0" y="100" width="119.5" height="50"/>
                                                 <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchDown" id="EeZ-54-xDI"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tdu-7e-JsC">
                                                 <rect key="frame" x="0.0" y="150" width="119.5" height="50"/>
@@ -288,6 +318,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="weightViewEditChange:" destination="zOW-Ta-eRw" eventType="editingChanged" id="Ut2-9I-8d8"/>
+                                                <action selector="weightViewEditingBegin:" destination="zOW-Ta-eRw" eventType="editingDidBegin" id="GpQ-M3-6wX"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="20000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fB-ky-Xy9">
@@ -297,6 +328,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="weightViewEditChange:" destination="zOW-Ta-eRw" eventType="editingChanged" id="tFw-fd-qO3"/>
+                                                <action selector="weightViewEditingBegin:" destination="zOW-Ta-eRw" eventType="editingDidBegin" id="Vq6-Lt-c7T"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="40000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rrR-kd-7Xs">
@@ -306,6 +338,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="weightViewEditChange:" destination="zOW-Ta-eRw" eventType="editingChanged" id="ng2-Td-JAk"/>
+                                                <action selector="weightViewEditingBegin:" destination="zOW-Ta-eRw" eventType="editingDidBegin" id="dkh-7y-w2b"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="30000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zWa-4x-YN5">
@@ -315,6 +348,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="weightViewEditChange:" destination="zOW-Ta-eRw" eventType="editingChanged" id="gs0-Op-9Pa"/>
+                                                <action selector="weightViewEditingBegin:" destination="zOW-Ta-eRw" eventType="editingDidBegin" id="nfV-AO-IGA"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="60000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cev-4D-0lT">
@@ -324,6 +358,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="weightViewEditChange:" destination="zOW-Ta-eRw" eventType="editingChanged" id="YsF-cj-Aon"/>
+                                                <action selector="weightViewEditingBegin:" destination="zOW-Ta-eRw" eventType="editingDidBegin" id="wjR-Jd-6Fg"/>
                                             </connections>
                                         </textField>
                                     </subviews>
@@ -399,6 +434,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="distanceViewEditChange:" destination="sIc-Zh-YMA" eventType="editingChanged" id="r4I-V9-mBd"/>
+                                                <action selector="distanceViewEditingBegin:" destination="sIc-Zh-YMA" eventType="editingDidBegin" id="lGr-3O-1ZT"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="180000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Qd-6I-fZI">
@@ -408,6 +444,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="distanceViewEditChange:" destination="sIc-Zh-YMA" eventType="editingChanged" id="RXC-92-shc"/>
+                                                <action selector="distanceViewEditingBegin:" destination="sIc-Zh-YMA" eventType="editingDidBegin" id="3W3-nV-WqK"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="190000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8eI-zy-dvv">
@@ -417,6 +454,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="distanceViewEditChange:" destination="sIc-Zh-YMA" eventType="editingChanged" id="tdP-0U-fzt"/>
+                                                <action selector="distanceViewEditingBegin:" destination="sIc-Zh-YMA" eventType="editingDidBegin" id="bxd-eZ-InX"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="200000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DzH-CN-NOt">
@@ -426,6 +464,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="distanceViewEditChange:" destination="sIc-Zh-YMA" eventType="editingChanged" id="cRf-rm-Qnl"/>
+                                                <action selector="distanceViewEditingBegin:" destination="sIc-Zh-YMA" eventType="editingDidBegin" id="Zdy-jU-Juu"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="210000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AwF-rG-xCO">
@@ -435,6 +474,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="distanceViewEditChange:" destination="sIc-Zh-YMA" eventType="editingChanged" id="RmX-WT-8FA"/>
+                                                <action selector="distanceViewEditingBegin:" destination="sIc-Zh-YMA" eventType="editingDidBegin" id="ajZ-e3-xdk"/>
                                             </connections>
                                         </textField>
                                     </subviews>
@@ -498,6 +538,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="volumeViewEditChange:" destination="gjy-n2-Yfb" eventType="editingChanged" id="djm-ij-7qr"/>
+                                                <action selector="volumeViewEditingBegin:" destination="gjy-n2-Yfb" eventType="editingDidBegin" id="eXl-FB-Vbk"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="110000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WkH-Yg-1VG">
@@ -507,6 +548,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="volumeViewEditChange:" destination="gjy-n2-Yfb" eventType="editingChanged" id="Sc7-50-ZQl"/>
+                                                <action selector="volumeViewEditingBegin:" destination="gjy-n2-Yfb" eventType="editingDidBegin" id="G1c-lt-i55"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="120000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2w-tN-KPx">
@@ -516,6 +558,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="volumeViewEditChange:" destination="gjy-n2-Yfb" eventType="editingChanged" id="cwf-3L-TIk"/>
+                                                <action selector="volumeViewEditingBegin:" destination="gjy-n2-Yfb" eventType="editingDidBegin" id="fm7-gJ-kbE"/>
                                             </connections>
                                         </textField>
                                     </subviews>
@@ -583,6 +626,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="volumeLiquidTextEditChange:" destination="fGp-9h-OhU" eventType="editingChanged" id="Bqc-d1-zUL"/>
+                                                <action selector="volumeLiquidViewEditingBegin:" destination="fGp-9h-OhU" eventType="editingDidBegin" id="d9n-9c-4so"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="140000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-ua-XzY">
@@ -592,6 +636,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="volumeLiquidTextEditChange:" destination="fGp-9h-OhU" eventType="editingChanged" id="dRx-hQ-k8F"/>
+                                                <action selector="volumeLiquidViewEditingBegin:" destination="fGp-9h-OhU" eventType="editingDidBegin" id="ZX1-hA-ZBs"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="150000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yWY-RS-lL0">
@@ -601,6 +646,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="volumeLiquidTextEditChange:" destination="fGp-9h-OhU" eventType="editingChanged" id="fJG-o6-8mb"/>
+                                                <action selector="volumeLiquidViewEditingBegin:" destination="fGp-9h-OhU" eventType="editingDidBegin" id="HRO-Vg-Z66"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="160000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSj-DT-69v">
@@ -610,6 +656,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="volumeLiquidTextEditChange:" destination="fGp-9h-OhU" eventType="editingChanged" id="W7l-1B-Vfd"/>
+                                                <action selector="volumeLiquidViewEditingBegin:" destination="fGp-9h-OhU" eventType="editingDidBegin" id="pLE-39-tGa"/>
                                             </connections>
                                         </textField>
                                     </subviews>
@@ -672,6 +719,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="speedViewEditChange:" destination="M71-XC-xdC" eventType="editingChanged" id="V30-bm-OVo"/>
+                                                <action selector="speedViewEditingBegin:" destination="M71-XC-xdC" eventType="editingDidBegin" id="Mf1-8n-IPh"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="230000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brk-uA-Jqy">
@@ -681,6 +729,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="speedViewEditChange:" destination="M71-XC-xdC" eventType="editingChanged" id="QpW-oO-fJV"/>
+                                                <action selector="speedViewEditingBegin:" destination="M71-XC-xdC" eventType="editingDidBegin" id="1IZ-Ro-Q1x"/>
                                             </connections>
                                         </textField>
                                         <textField opaque="NO" tag="220000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYx-Jv-VaQ">
@@ -690,6 +739,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
                                                 <action selector="speedViewEditChange:" destination="M71-XC-xdC" eventType="editingChanged" id="Dn6-2m-EZJ"/>
+                                                <action selector="speedViewEditingBegin:" destination="M71-XC-xdC" eventType="editingDidBegin" id="9lw-YG-IGt"/>
                                             </connections>
                                         </textField>
                                     </subviews>
@@ -750,6 +800,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
+                                                <action selector="tempreatureViewEditBegin:" destination="Jo2-cI-7IB" eventType="editingDidBegin" id="OYf-JR-9Rp"/>
                                                 <action selector="tempreatureViewEditChange:" destination="Jo2-cI-7IB" eventType="editingChanged" id="YnK-LC-Vm4"/>
                                             </connections>
                                         </textField>
@@ -759,6 +810,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
+                                                <action selector="tempreatureViewEditBegin:" destination="Jo2-cI-7IB" eventType="editingDidBegin" id="iMv-PF-Zh6"/>
                                                 <action selector="tempreatureViewEditChange:" destination="Jo2-cI-7IB" eventType="editingChanged" id="KIo-8q-WR0"/>
                                             </connections>
                                         </textField>
@@ -768,6 +820,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
+                                                <action selector="tempreatureViewEditBegin:" destination="Jo2-cI-7IB" eventType="editingDidBegin" id="Xxy-Ej-R7I"/>
                                                 <action selector="tempreatureViewEditChange:" destination="Jo2-cI-7IB" eventType="editingChanged" id="nre-o2-oH3"/>
                                             </connections>
                                         </textField>

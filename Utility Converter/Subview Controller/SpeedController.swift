@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpeedController: UIView {
+class SpeedController: BaseSubView {
     
     @IBOutlet var milesPerHourText: UITextField!
     @IBOutlet var kmPerHourText: UITextField!
@@ -25,5 +25,13 @@ class SpeedController: UIView {
         meterPerSecText.text = String(model.MeterPerSec)
     }
     
+    
+    @IBAction func speedViewEditingBegin(_ sender: UITextField) {
+        currentTextField = sender;
+    }
+    
+    override func editChanged(sender: UITextField) {
+        speedViewEditChange(sender)
+    }
 
 }

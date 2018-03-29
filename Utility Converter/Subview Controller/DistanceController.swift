@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DistanceController: UIView {
+class DistanceController: BaseSubView {
 
     @IBOutlet weak var cmText: UITextField!
     @IBOutlet var meterText: UITextField!
@@ -26,6 +26,14 @@ class DistanceController: UIView {
         mmText.text = String(model.Mm)
         yardText.text = String(model.Yard)
         inchText.text = String(model.Inch)
+    }
+    
+    @IBAction func distanceViewEditingBegin(_ sender: UITextField) {
+        currentTextField = sender;
+    }
+    
+    override func editChanged(sender : UITextField) {
+        distanceViewEditChange(sender)
     }
     
 }

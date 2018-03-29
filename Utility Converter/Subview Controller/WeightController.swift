@@ -8,7 +8,9 @@
 
 import UIKit
 
-class WeightController: UIView {
+class WeightController: BaseSubView {
+   
+    
     
     @IBOutlet weak var ounceText: UITextField!
     @IBOutlet weak var poundText: UITextField!
@@ -30,4 +32,11 @@ class WeightController: UIView {
         
     }
     
+    @IBAction func weightViewEditingBegin(_ sender: UITextField) {
+        currentTextField = sender;
+    }
+    
+    override func editChanged(sender : UITextField) {
+        weightViewEditChange(sender)
+    }
 }

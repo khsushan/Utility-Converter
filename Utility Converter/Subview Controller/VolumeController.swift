@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VolumeController: UIView {
+class VolumeController: BaseSubView {
     @IBOutlet weak var cubicMeterText: UITextField!
     @IBOutlet weak var cubicCentimeterText: UITextField!
     @IBOutlet weak var literText: UITextField!
@@ -22,6 +22,15 @@ class VolumeController: UIView {
         cubicMeterText.text = String(model.CubicMeter)
         cubicCentimeterText.text = String(model.CubicCentimeter)
         literText.text = String(model.Liter)
+    }
+    
+    
+    @IBAction func volumeViewEditingBegin(_ sender: UITextField) {
+        currentTextField = sender;
+    }
+    
+    override func editChanged(sender: UITextField) {
+        volumeViewEditChange(sender)
     }
     
 }
