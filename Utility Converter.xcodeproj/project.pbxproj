@@ -17,6 +17,7 @@
 		5F30119B206CE89700DBB4F7 /* Tempreature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30119A206CE89700DBB4F7 /* Tempreature.swift */; };
 		5F30119D206CF94000DBB4F7 /* BaseSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30119C206CF94000DBB4F7 /* BaseSubView.swift */; };
 		5F3011A0206D035100DBB4F7 /* ConverterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30119F206D035100DBB4F7 /* ConverterDelegate.swift */; };
+		5F3011A3206D1DDE00DBB4F7 /* ConstantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3011A2206D1DDE00DBB4F7 /* ConstantViewController.swift */; };
 		5FFD2018206A68B600BFB5F7 /* WeightEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2017206A68B600BFB5F7 /* WeightEnum.swift */; };
 		5FFD201A206A6CEA00BFB5F7 /* TempreatureEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2019206A6CEA00BFB5F7 /* TempreatureEnum.swift */; };
 		5FFD201C206A6E9400BFB5F7 /* VolumeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD201B206A6E9400BFB5F7 /* VolumeEnum.swift */; };
@@ -53,6 +54,7 @@
 		5F30119A206CE89700DBB4F7 /* Tempreature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tempreature.swift; sourceTree = "<group>"; };
 		5F30119C206CF94000DBB4F7 /* BaseSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSubView.swift; sourceTree = "<group>"; };
 		5F30119F206D035100DBB4F7 /* ConverterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterDelegate.swift; sourceTree = "<group>"; };
+		5F3011A2206D1DDE00DBB4F7 /* ConstantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantViewController.swift; sourceTree = "<group>"; };
 		5FFD2017206A68B600BFB5F7 /* WeightEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEnum.swift; sourceTree = "<group>"; };
 		5FFD2019206A6CEA00BFB5F7 /* TempreatureEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempreatureEnum.swift; sourceTree = "<group>"; };
 		5FFD201B206A6E9400BFB5F7 /* VolumeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeEnum.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		3F0DD59A2059530500EF893F /* Utility Converter */ = {
 			isa = PBXGroup;
 			children = (
+				5F3011A1206D1D9B00DBB4F7 /* Controller */,
 				5F30119E206D027E00DBB4F7 /* Delegate */,
 				5FFD2031206BC50100BFB5F7 /* Converter */,
 				5FFD202E206BB3C700BFB5F7 /* Model */,
@@ -142,6 +145,14 @@
 				5F30119F206D035100DBB4F7 /* ConverterDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		5F3011A1206D1D9B00DBB4F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F3011A2206D1DDE00DBB4F7 /* ConstantViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		5FFD2016206A685400BFB5F7 /* Common */ = {
@@ -301,6 +312,7 @@
 				5FFD201A206A6CEA00BFB5F7 /* TempreatureEnum.swift in Sources */,
 				5FFD2027206BA98900BFB5F7 /* VolumeController.swift in Sources */,
 				5FFD2035206BEF1400BFB5F7 /* Distance.swift in Sources */,
+				5F3011A3206D1DDE00DBB4F7 /* ConstantViewController.swift in Sources */,
 				5F3011A0206D035100DBB4F7 /* ConverterDelegate.swift in Sources */,
 				5FFD2030206BB3EA00BFB5F7 /* Weight.swift in Sources */,
 				5FFD2045206CE5B700BFB5F7 /* TempreatureConverter.swift in Sources */,
