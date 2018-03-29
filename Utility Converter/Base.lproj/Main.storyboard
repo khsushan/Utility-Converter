@@ -670,18 +670,27 @@
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="speedViewEditChange:" destination="M71-XC-xdC" eventType="editingChanged" id="V30-bm-OVo"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="230000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brk-uA-Jqy">
                                             <rect key="frame" x="0.0" y="37.5" width="264.5" height="34"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="speedViewEditChange:" destination="M71-XC-xdC" eventType="editingChanged" id="QpW-oO-fJV"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="220000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYx-Jv-VaQ">
                                             <rect key="frame" x="0.0" y="75.5" width="264.5" height="33.5"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="speedViewEditChange:" destination="M71-XC-xdC" eventType="editingChanged" id="Dn6-2m-EZJ"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -696,6 +705,11 @@
                         <constraint firstItem="mWQ-Rf-x5m" firstAttribute="top" secondItem="iAU-b1-nOY" secondAttribute="top" constant="4" id="hWy-hi-JqS"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="iAU-b1-nOY"/>
+                    <connections>
+                        <outlet property="kmPerHourText" destination="brk-uA-Jqy" id="F8c-sv-Tgi"/>
+                        <outlet property="meterPerSecText" destination="tYx-Jv-VaQ" id="Lkj-O8-qNN"/>
+                        <outlet property="milesPerHourText" destination="CNE-Hi-mdJ" id="QHu-Er-n1o"/>
+                    </connections>
                 </view>
                 <view contentMode="scaleToFill" id="Jo2-cI-7IB" userLabel="Tempreature View" customClass="TempreatureController" customModule="Utility_Converter" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="371" height="104"/>

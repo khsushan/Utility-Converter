@@ -9,13 +9,21 @@
 import UIKit
 
 class SpeedController: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    @IBOutlet var milesPerHourText: UITextField!
+    @IBOutlet var kmPerHourText: UITextField!
+    @IBOutlet var meterPerSecText: UITextField!
+    
+    
+    @IBAction func speedViewEditChange(_ sender: UITextField) {
+        let model : Speed = Speed();
+        model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
+        model.Tag = sender.tag
+        model.Convert();
+        milesPerHourText.text = String(model.MilesPerHour)
+        kmPerHourText.text = String(model.KMPerHour)
+        meterPerSecText.text = String(model.MeterPerSec)
     }
-    */
+    
 
 }
