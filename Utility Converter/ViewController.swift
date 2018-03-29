@@ -62,7 +62,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonOnePress(_ sender: Any) {
-        
     }
     
     func  getCreatedView(view : UIView) ->UIView{

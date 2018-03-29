@@ -2,7 +2,7 @@
 //  TempreatureEnum.swift
 //  Utility Converter
 //
-//  Created by Calcey on 3/27/18.
+//  Created by Sachith Ushan on 3/27/18.
 //  Copyright © 2018 student. All rights reserved.
 //
 

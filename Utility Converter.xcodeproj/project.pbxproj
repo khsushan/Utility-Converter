@@ -14,6 +14,7 @@
 		3F0DD5A62059530500EF893F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0DD5A42059530500EF893F /* LaunchScreen.storyboard */; };
 		46376944206B978C0055168C /* WeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46376943206B978C0055168C /* WeightController.swift */; };
 		46376946206B991B0055168C /* DistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46376945206B991B0055168C /* DistanceController.swift */; };
+		5F30119B206CE89700DBB4F7 /* Tempreature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30119A206CE89700DBB4F7 /* Tempreature.swift */; };
 		5FFD2018206A68B600BFB5F7 /* WeightEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2017206A68B600BFB5F7 /* WeightEnum.swift */; };
 		5FFD201A206A6CEA00BFB5F7 /* TempreatureEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2019206A6CEA00BFB5F7 /* TempreatureEnum.swift */; };
 		5FFD201C206A6E9400BFB5F7 /* VolumeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD201B206A6E9400BFB5F7 /* VolumeEnum.swift */; };
@@ -34,6 +35,7 @@
 		5FFD203F206CC9B400BFB5F7 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD203E206CC9B400BFB5F7 /* Volume.swift */; };
 		5FFD2041206CD75700BFB5F7 /* SpeedConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2040206CD75700BFB5F7 /* SpeedConverter.swift */; };
 		5FFD2043206CD8DB00BFB5F7 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2042206CD8DB00BFB5F7 /* Speed.swift */; };
+		5FFD2045206CE5B700BFB5F7 /* TempreatureConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2044206CE5B700BFB5F7 /* TempreatureConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,7 @@
 		3F0DD5A72059530500EF893F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46376943206B978C0055168C /* WeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightController.swift; sourceTree = "<group>"; };
 		46376945206B991B0055168C /* DistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceController.swift; sourceTree = "<group>"; };
+		5F30119A206CE89700DBB4F7 /* Tempreature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tempreature.swift; sourceTree = "<group>"; };
 		5FFD2017206A68B600BFB5F7 /* WeightEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEnum.swift; sourceTree = "<group>"; };
 		5FFD2019206A6CEA00BFB5F7 /* TempreatureEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempreatureEnum.swift; sourceTree = "<group>"; };
 		5FFD201B206A6E9400BFB5F7 /* VolumeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeEnum.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		5FFD203E206CC9B400BFB5F7 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		5FFD2040206CD75700BFB5F7 /* SpeedConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedConverter.swift; sourceTree = "<group>"; };
 		5FFD2042206CD8DB00BFB5F7 /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		5FFD2044206CE5B700BFB5F7 /* TempreatureConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempreatureConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 				5FFD203A206C088C00BFB5F7 /* VolumeLiquid.swift */,
 				5FFD203E206CC9B400BFB5F7 /* Volume.swift */,
 				5FFD2042206CD8DB00BFB5F7 /* Speed.swift */,
+				5F30119A206CE89700DBB4F7 /* Tempreature.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				5FFD2038206C06E300BFB5F7 /* VolumeLiquidConverter.swift */,
 				5FFD203C206C103D00BFB5F7 /* VolumeConverter.swift */,
 				5FFD2040206CD75700BFB5F7 /* SpeedConverter.swift */,
+				5FFD2044206CE5B700BFB5F7 /* TempreatureConverter.swift */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F30119B206CE89700DBB4F7 /* Tempreature.swift in Sources */,
 				5FFD2033206BC53700BFB5F7 /* WeightConverter.swift in Sources */,
 				5FFD203D206C103D00BFB5F7 /* VolumeConverter.swift in Sources */,
 				5FFD2022206A72D600BFB5F7 /* SpeedEnum.swift in Sources */,
@@ -280,6 +287,7 @@
 				5FFD2027206BA98900BFB5F7 /* VolumeController.swift in Sources */,
 				5FFD2035206BEF1400BFB5F7 /* Distance.swift in Sources */,
 				5FFD2030206BB3EA00BFB5F7 /* Weight.swift in Sources */,
+				5FFD2045206CE5B700BFB5F7 /* TempreatureConverter.swift in Sources */,
 				5FFD203B206C088C00BFB5F7 /* VolumeLiquid.swift in Sources */,
 				5FFD203F206CC9B400BFB5F7 /* Volume.swift in Sources */,
 				5FFD201C206A6E9400BFB5F7 /* VolumeEnum.swift in Sources */,

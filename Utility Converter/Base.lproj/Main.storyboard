@@ -749,18 +749,27 @@
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="tempreatureViewEditChange:" destination="Jo2-cI-7IB" eventType="editingChanged" id="YnK-LC-Vm4"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="80000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ih-t8-NKZ">
                                             <rect key="frame" x="0.0" y="33.5" width="264" height="29"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="tempreatureViewEditChange:" destination="Jo2-cI-7IB" eventType="editingChanged" id="KIo-8q-WR0"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" tag="90000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2R-up-0x8">
                                             <rect key="frame" x="0.0" y="66.5" width="264" height="29.5"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="tempreatureViewEditChange:" destination="Jo2-cI-7IB" eventType="editingChanged" id="nre-o2-oH3"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -775,6 +784,11 @@
                         <constraint firstItem="Ply-FD-MZr" firstAttribute="trailing" secondItem="5us-l3-BTc" secondAttribute="trailing" constant="8" id="ntP-A4-12H"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="Ply-FD-MZr"/>
+                    <connections>
+                        <outlet property="celsiusText" destination="z92-sI-fLe" id="zw5-dL-Whz"/>
+                        <outlet property="fahrenheitText" destination="3Ih-t8-NKZ" id="0qi-z4-aSB"/>
+                        <outlet property="kelvinText" destination="h2R-up-0x8" id="asS-uD-5Yz"/>
+                    </connections>
                 </view>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
