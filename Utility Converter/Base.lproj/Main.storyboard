@@ -154,6 +154,9 @@
                                             <constraint firstAttribute="width" constant="30" id="uR3-1F-ryo"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="icons8-save-as-filled-50"/>
+                                        <connections>
+                                            <action selector="saveButtonClick:" destination="BYZ-38-t0r" eventType="touchDown" id="Jlu-YJ-SuT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

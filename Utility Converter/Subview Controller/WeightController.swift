@@ -39,4 +39,14 @@ class WeightController: BaseSubView {
     override func editChanged(sender : UITextField) {
         weightViewEditChange(sender)
     }
+    
+    override func save() {
+        var saveRecord :  String = "";
+        saveRecord += "ounce : " + ounceText.text!;
+        saveRecord += "pound : " + poundText.text!;
+        saveRecord += "stone : " + stoneText.text!;
+        saveRecord += "gram : " + gramText.text!;
+        saveRecord += "kg : " + kgText.text!
+        UserDefaultsHandler.save(data: saveRecord, key: "Weight")
+    }
 }

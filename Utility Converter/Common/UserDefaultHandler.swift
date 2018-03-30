@@ -8,10 +8,10 @@
 
 import Foundation
 class  UserDefaultsHandler{
-    let defaults = UserDefaults.standard
+     static let defaults = UserDefaults.standard
     
-    func  save(data:String, key : String) {
-       var history : [String] = loadHistory(key: <#T##String#>)
+    class func  save(data:String, key : String) {
+        var history : [String] = loadHistory(key : key)
        history.append(data)
        defaults.set(history, forKey: key)
        if history.count > 5 {
@@ -20,13 +20,13 @@ class  UserDefaultsHandler{
        defaults.set(history, forKey: key)
     }
     
-    func  getData(key:String) -> [String] {
-        var history : [String] = loadHistory(key: <#T##String#>);
+    class func  getData(key:String) -> [String] {
+        var history : [String] = loadHistory(key : key);
         history.reverse();
-        return history;        
+        return history;
     }
     
-    func  loadHistory(key: String) -> [String]{
+     private class func  loadHistory(key: String) -> [String]{
         var history = [String]()
         let array =  defaults.array(forKey: key)
         if (array != nil && history.isEmpty){
@@ -34,6 +34,7 @@ class  UserDefaultsHandler{
                 history.append(records as! String)
             }
         }
+        print(history)
         return history;
     }
     

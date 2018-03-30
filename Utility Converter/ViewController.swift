@@ -82,5 +82,8 @@ class ViewController: UIViewController {
         return view;
     }
     
+    @IBAction func saveButtonClick(_ sender: UIButton) {
+        activeView.save();
+    }
 }
 

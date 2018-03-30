@@ -12,4 +12,7 @@ class BaseSubView: UIView {
     var currentTextField: UITextField!
     
     func editChanged(sender : UITextField){}
+    
+    func save(){
+    }
 }
