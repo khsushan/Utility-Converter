@@ -29,6 +29,7 @@ class WeightController: BaseSubView {
         stoneText.text = String(model.Stone)
         gramText.text = String(model.Gram)
         kgText.text = String(model.Kg)
+        stonePoundText.text = String(model.SmallPound)
         
     }
     

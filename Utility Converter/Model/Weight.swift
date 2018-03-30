@@ -13,8 +13,8 @@ class Weight{
     private var pound : Double = 0;
     private var ounce : Double = 0;
     private var gram : Double = 0;
-    private var stone : Double = 0;
-    private var smallPound : Double = 0;
+    private var stone : Int = 0;
+    private var smallPound : Int = 0;
     private var inputValue : Double = 0;
 
     var Tag : Int {
@@ -47,12 +47,12 @@ class Weight{
         set {gram = newValue }
     }
 
-    var Stone : Double{
+    var Stone : Int{
         get {return stone}
         set {stone = newValue }
     }
 
-    var SmallPound : Double{
+    var SmallPound : Int{
         get {return smallPound}
         set {smallPound = newValue }
     }
@@ -66,16 +66,16 @@ class Weight{
             Gram = inputValue * WeightConverter.KgConversionValue(weightType: .gram)
             Pound = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
             Ounce = inputValue * WeightConverter.KgConversionValue(weightType: .ounce)
-            Stone = inputValue *  WeightConverter.KgConversionValue(weightType: .stone)
-            SmallPound = inputValue *  WeightConverter.KgConversionValue(weightType: .poundSmall)
+            Stone = Int(Pound/14)
+            SmallPound = Int(Pound.truncatingRemainder(dividingBy:14))
         case WeightEnum.pound :
             Pound = inputValue
             Kg = inputValue / WeightConverter.KgConversionValue(weightType: .pound)
             inputValue = Kg
             Gram = inputValue * WeightConverter.KgConversionValue(weightType: .gram)
             Ounce = inputValue * WeightConverter.KgConversionValue(weightType: .ounce)
-            Stone = inputValue *  WeightConverter.KgConversionValue(weightType: .stone)
-            SmallPound = inputValue *  WeightConverter.KgConversionValue(weightType: .poundSmall)
+            Stone = Int(Pound/14)
+            SmallPound = Int(Pound.truncatingRemainder(dividingBy:14))
             break;
         case WeightEnum.ounce :
             Ounce = inputValue
@@ -83,8 +83,8 @@ class Weight{
             inputValue = Kg
             Gram = inputValue * WeightConverter.KgConversionValue(weightType: .gram)
             Pound = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
-            Stone = inputValue *  WeightConverter.KgConversionValue(weightType: .stone)
-            SmallPound = inputValue *  WeightConverter.KgConversionValue(weightType: .poundSmall)
+            Stone = Int(Pound/14)
+            SmallPound = Int(Pound.truncatingRemainder(dividingBy:14))
             break;
         case WeightEnum.gram :
             Gram = inputValue
@@ -92,25 +92,26 @@ class Weight{
             inputValue = Kg
             Ounce = inputValue * WeightConverter.KgConversionValue(weightType: .ounce)
             Pound = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
-            Stone = inputValue *  WeightConverter.KgConversionValue(weightType: .stone)
-            SmallPound = inputValue *  WeightConverter.KgConversionValue(weightType: .poundSmall)
+            Stone = Int(Pound/14)
+            SmallPound = Int(Pound.truncatingRemainder(dividingBy:14))
             break;
         case WeightEnum.stone :
-            Stone = inputValue
+            Stone = Int(inputValue)
             Kg = inputValue / WeightConverter.KgConversionValue(weightType: .stone)
             inputValue = Kg
             Ounce = inputValue * WeightConverter.KgConversionValue(weightType: .ounce)
             Pound = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
             Gram = inputValue *  WeightConverter.KgConversionValue(weightType: .gram)
-            SmallPound = inputValue *  WeightConverter.KgConversionValue(weightType: .poundSmall)
+            SmallPound = 0;
             break;
         case WeightEnum.poundSmall :
-            SmallPound = inputValue
+            Pound = inputValue
             Kg = inputValue / WeightConverter.KgConversionValue(weightType: .poundSmall)
             inputValue = Kg
             Ounce = inputValue * WeightConverter.KgConversionValue(weightType: .gram)
-            Pound = inputValue * WeightConverter.KgConversionValue(weightType: .pound)
             Gram = inputValue *  WeightConverter.KgConversionValue(weightType: .stone)
+            Stone = Int(Pound/14)
+            SmallPound = Int(Pound.truncatingRemainder(dividingBy:14))
             break;
         }
     }
