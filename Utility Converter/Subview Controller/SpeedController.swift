@@ -33,5 +33,13 @@ class SpeedController: BaseSubView {
     override func editChanged(sender: UITextField) {
         speedViewEditChange(sender)
     }
+    
+    override func save() {
+        var saveRecord :  String = "";
+        saveRecord += "Miles per Hour : " + milesPerHourText.text! + " , ";
+        saveRecord += "Kilometers per Hour " + kmPerHourText.text! + " , ";
+        saveRecord += "Meters per Sec  : " + meterPerSecText.text!;
+        UserDefaultsHandler.save(data: saveRecord, key: "Speed")
+    }
 
 }

@@ -32,4 +32,12 @@ class TempreatureController: BaseSubView {
         tempreatureViewEditChange(sender);
     }
     
+    override func save() {
+        var saveRecord :  String = "";
+        saveRecord += "Celsius : " + celsiusText.text! + " , ";
+        saveRecord += "Kelvin " + kelvinText.text! + " , ";
+        saveRecord += "Fahenheit  : " + fahrenheitText.text!;
+        UserDefaultsHandler.save(data: saveRecord, key: "Tempreature")
+    }
+    
 }
