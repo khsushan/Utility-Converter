@@ -29,6 +29,7 @@ class HistoryViewController :  UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = historyTable.dequeueReusableCell(withIdentifier: "cell")
+        cell?.textLabel?.numberOfLines = 0
         cell?.textLabel?.textAlignment = NSTextAlignment.center
         cell?.textLabel?.text = history[indexPath.row]
         
