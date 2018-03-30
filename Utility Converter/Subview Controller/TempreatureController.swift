@@ -37,7 +37,7 @@ class TempreatureController: BaseSubView {
         saveRecord += "Celsius : " + celsiusText.text! + " , ";
         saveRecord += "Kelvin " + kelvinText.text! + " , ";
         saveRecord += "Fahenheit  : " + fahrenheitText.text!;
-        UserDefaultsHandler.save(data: saveRecord, key: "Tempreature")
+        UserDefaultsHandler.save(data: saveRecord, key: Constant.TEMP_KEY)
     }
     
 }

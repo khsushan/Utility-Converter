@@ -38,12 +38,12 @@ class DistanceController: BaseSubView {
     
     override func save() {
         var saveRecord :  String = "";
-        saveRecord += "cm : " + cmText.text! + " , ";
-        saveRecord += "meter : " + meterText.text! + " , ";
-        saveRecord += "inch : " + inchText.text! + " , ";
-        saveRecord += "mm : " + mmText.text! + " , ";
-        saveRecord += "yard : " + yardText.text!
-        UserDefaultsHandler.save(data: saveRecord, key: "Distance")
+        saveRecord += "Centimeter : " + cmText.text! + " , ";
+        saveRecord += "Meter : " + meterText.text! + " , ";
+        saveRecord += "Inch : " + inchText.text! + " , ";
+        saveRecord += "Milimeter : " + mmText.text! + " , ";
+        saveRecord += "Yard : " + yardText.text!
+        UserDefaultsHandler.save(data: saveRecord, key: Constant.DISTANCE_KEY)
     }
     
 }

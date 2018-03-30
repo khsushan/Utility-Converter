@@ -38,7 +38,7 @@ class VolumeController: BaseSubView {
         saveRecord += "Cubic Meter : " + cubicMeterText.text! + " , ";
         saveRecord += "Cubic Centimeter : " + cubicCentimeterText.text! + " , ";
         saveRecord += "Liter  : " + literText.text!;
-        UserDefaultsHandler.save(data: saveRecord, key: "Volume")
+        UserDefaultsHandler.save(data: saveRecord, key: Constant.VOLUME_KEY)
     }
     
 }

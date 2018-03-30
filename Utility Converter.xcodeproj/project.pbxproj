@@ -19,6 +19,8 @@
 		5F3011A0206D035100DBB4F7 /* ConverterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30119F206D035100DBB4F7 /* ConverterDelegate.swift */; };
 		5F3011A3206D1DDE00DBB4F7 /* ConstantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3011A2206D1DDE00DBB4F7 /* ConstantViewController.swift */; };
 		5F3011A6206D256300DBB4F7 /* UserDefaultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3011A5206D256300DBB4F7 /* UserDefaultHandler.swift */; };
+		5F3011A8206E722B00DBB4F7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3011A7206E722B00DBB4F7 /* Constant.swift */; };
+		5F3011AA206E742D00DBB4F7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3011A9206E742D00DBB4F7 /* HistoryViewController.swift */; };
 		5FFD2018206A68B600BFB5F7 /* WeightEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2017206A68B600BFB5F7 /* WeightEnum.swift */; };
 		5FFD201A206A6CEA00BFB5F7 /* TempreatureEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2019206A6CEA00BFB5F7 /* TempreatureEnum.swift */; };
 		5FFD201C206A6E9400BFB5F7 /* VolumeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD201B206A6E9400BFB5F7 /* VolumeEnum.swift */; };
@@ -57,6 +59,8 @@
 		5F30119F206D035100DBB4F7 /* ConverterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterDelegate.swift; sourceTree = "<group>"; };
 		5F3011A2206D1DDE00DBB4F7 /* ConstantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantViewController.swift; sourceTree = "<group>"; };
 		5F3011A5206D256300DBB4F7 /* UserDefaultHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHandler.swift; sourceTree = "<group>"; };
+		5F3011A7206E722B00DBB4F7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5F3011A9206E742D00DBB4F7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		5FFD2017206A68B600BFB5F7 /* WeightEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEnum.swift; sourceTree = "<group>"; };
 		5FFD2019206A6CEA00BFB5F7 /* TempreatureEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempreatureEnum.swift; sourceTree = "<group>"; };
 		5FFD201B206A6E9400BFB5F7 /* VolumeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeEnum.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				5F3011A2206D1DDE00DBB4F7 /* ConstantViewController.swift */,
+				5F3011A9206E742D00DBB4F7 /* HistoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				5F3011A5206D256300DBB4F7 /* UserDefaultHandler.swift */,
+				5F3011A7206E722B00DBB4F7 /* Constant.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 				5FFD2022206A72D600BFB5F7 /* SpeedEnum.swift in Sources */,
 				5FFD2020206A717100BFB5F7 /* DistanceEnum.swift in Sources */,
 				3F0DD59E2059530500EF893F /* ViewController.swift in Sources */,
+				5F3011AA206E742D00DBB4F7 /* HistoryViewController.swift in Sources */,
 				46376944206B978C0055168C /* WeightController.swift in Sources */,
 				5FFD202B206BA9D000BFB5F7 /* SpeedController.swift in Sources */,
 				3F0DD59C2059530500EF893F /* AppDelegate.swift in Sources */,
@@ -321,6 +328,7 @@
 				5FFD2039206C06E300BFB5F7 /* VolumeLiquidConverter.swift in Sources */,
 				5FFD2018206A68B600BFB5F7 /* WeightEnum.swift in Sources */,
 				5FFD2043206CD8DB00BFB5F7 /* Speed.swift in Sources */,
+				5F3011A8206E722B00DBB4F7 /* Constant.swift in Sources */,
 				5FFD201A206A6CEA00BFB5F7 /* TempreatureEnum.swift in Sources */,
 				5FFD2027206BA98900BFB5F7 /* VolumeController.swift in Sources */,
 				5FFD2035206BEF1400BFB5F7 /* Distance.swift in Sources */,

@@ -41,7 +41,7 @@ class VolumeLiquidController: BaseSubView {
         saveRecord += "Liter : " + literLiquidText.text! + " , ";
         saveRecord += "Pint  : " + pintText.text! ;
         saveRecord += "Fluid Ounce  : " + fluidOunceText.text!;
-        UserDefaultsHandler.save(data: saveRecord, key: "VolumeLiquid")
+        UserDefaultsHandler.save(data: saveRecord, key: Constant.VOLUMELIQUID_KEY)
     }
 
 }

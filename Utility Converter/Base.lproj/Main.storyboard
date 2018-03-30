@@ -11,6 +11,46 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--History View Controller-->
+        <scene sceneID="HC8-bT-cbQ">
+            <objects>
+                <viewController id="ofd-gG-QeP" customClass="HistoryViewController" customModule="Utility_Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GKT-iv-rd5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uhj-US-ALR">
+                                <rect key="frame" x="2" y="22" width="371" height="599"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dkE-az-rAX">
+                                        <rect key="frame" x="0.0" y="28" width="371" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dkE-az-rAX" id="C8D-MA-K0Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="371" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vDd-lS-FFz" firstAttribute="bottom" secondItem="Uhj-US-ALR" secondAttribute="bottom" constant="2" id="Br2-X4-9i7"/>
+                            <constraint firstItem="Uhj-US-ALR" firstAttribute="leading" secondItem="vDd-lS-FFz" secondAttribute="leading" constant="2" id="bPm-k1-ago"/>
+                            <constraint firstItem="vDd-lS-FFz" firstAttribute="trailing" secondItem="Uhj-US-ALR" secondAttribute="trailing" constant="2" id="brb-6L-y9U"/>
+                            <constraint firstItem="Uhj-US-ALR" firstAttribute="top" secondItem="vDd-lS-FFz" secondAttribute="top" constant="2" id="xFT-1X-jFF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vDd-lS-FFz"/>
+                    </view>
+                    <connections>
+                        <outlet property="historyTable" destination="Uhj-US-ALR" id="8LU-mE-TBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMo-Pl-uBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820" y="63"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -119,9 +159,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tdu-7e-JsC">
                                                 <rect key="frame" x="0.0" y="150" width="119.5" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-0Y-PeO">
+                                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-0Y-PeO">
                                                         <rect key="frame" x="0.0" y="0.0" width="119.5" height="25"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="icons8-clear-symbol-80"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36O-hN-Bp8">
                                                         <rect key="frame" x="0.0" y="25" width="119.5" height="25"/>
@@ -167,6 +207,9 @@
                                     <constraint firstAttribute="width" constant="30" id="oRr-xs-Vqm"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="icons8-save-as-filled-50"/>
+                                <connections>
+                                    <segue destination="ofd-gG-QeP" kind="show" id="7sp-DM-JTM"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLV-Hn-980">
                                 <rect key="frame" x="0.0" y="20" width="375" height="50"/>
@@ -961,6 +1004,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icons8-clear-symbol-80" width="80" height="80"/>
         <image name="icons8-ruler-50" width="50" height="50"/>
         <image name="icons8-save-as-filled-50" width="50" height="50"/>
         <image name="icons8-speed-50" width="50" height="50"/>

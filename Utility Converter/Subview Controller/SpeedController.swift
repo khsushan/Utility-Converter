@@ -39,7 +39,7 @@ class SpeedController: BaseSubView {
         saveRecord += "Miles per Hour : " + milesPerHourText.text! + " , ";
         saveRecord += "Kilometers per Hour " + kmPerHourText.text! + " , ";
         saveRecord += "Meters per Sec  : " + meterPerSecText.text!;
-        UserDefaultsHandler.save(data: saveRecord, key: "Speed")
+        UserDefaultsHandler.save(data: saveRecord, key: Constant.SPEED_KEY)
     }
 
 }

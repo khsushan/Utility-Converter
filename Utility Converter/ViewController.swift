@@ -85,5 +85,11 @@ class ViewController: UIViewController {
     @IBAction func saveButtonClick(_ sender: UIButton) {
         activeView.save();
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let historyViewController = segue.destination as? HistoryViewController {
+            historyViewController.key = "Weight"
+        }
+    }
 }
 

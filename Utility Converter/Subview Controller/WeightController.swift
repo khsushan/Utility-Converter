@@ -43,11 +43,11 @@ class WeightController: BaseSubView {
     
     override func save() {
         var saveRecord :  String = "";
-        saveRecord += "ounce : " + ounceText.text! + " , ";
-        saveRecord += "pound : " + poundText.text! + " , ";
-        saveRecord += "stone : " + stoneText.text! + " , ";
-        saveRecord += "gram : " + gramText.text! + " , ";
-        saveRecord += "kg : " + kgText.text!
-        UserDefaultsHandler.save(data: saveRecord, key: "Weight")
+        saveRecord += "Ounce : " + ounceText.text! + " , ";
+        saveRecord += "Pound : " + poundText.text! + " , ";
+        saveRecord += "Stone : " + stoneText.text! + " , ";
+        saveRecord += "Gram : " + gramText.text! + " , ";
+        saveRecord += "Kilo Gram : " + kgText.text!
+        UserDefaultsHandler.save(data: saveRecord, key: Constant.WEIGHT_KEY)
     }
 }
