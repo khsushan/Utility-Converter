@@ -17,7 +17,7 @@ class WeightController: BaseSubView {
     @IBOutlet weak var stoneText: UITextField!
     @IBOutlet weak var gramText: UITextField!
     @IBOutlet weak var kgText: UITextField!
-    
+    @IBOutlet weak var stonePoundText: UITextField!
     
     @IBAction func weightViewEditChange(_ sender: UITextField) {
         let model : Weight 	= Weight();
