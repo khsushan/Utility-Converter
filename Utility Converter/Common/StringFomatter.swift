@@ -24,5 +24,4 @@ class StringFomatter {
         }
         return false
     }
-    
 }
