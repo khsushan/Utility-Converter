@@ -90,11 +90,14 @@ class ViewController: UIViewController {
         if let selectedRange = textField.selectedTextRange {
             
             let cursorPosition = textField.offset(from:textField.beginningOfDocument, to: selectedRange.start)
-            var array = Array(textField.text!)
-            array.remove(at : cursorPosition-1)
-            textField.text = String(array)
-            print(String(array))
-            activeView.editChanged(sender: textField);
+            if(cursorPosition != 0){
+                var array = Array(textField.text!)
+                array.remove(at : cursorPosition-1)
+                textField.text = String(array)
+                print(String(array))
+                activeView.editChanged(sender: textField);
+            }
+            
             
         }
         

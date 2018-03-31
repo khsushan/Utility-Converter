@@ -14,13 +14,18 @@ class TempreatureController: BaseSubView {
     @IBOutlet var fahrenheitText: UITextField!
     
     @IBAction func tempreatureViewEditChange(_ sender: UITextField) {
-        let model : Tempreature = Tempreature();
-        model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
-        model.Tag = sender.tag
-        model.Convert();
-        celsiusText.text = String(format: "%.04f", Float(model.Celsius))
-        kelvinText.text = String(format: "%.04f", Float(model.Kelvin))
-        fahrenheitText.text = String(format: "%.04f", Float(model.Farenhite))
+        let newString = sender.text?.replacingOccurrences(of: "-", with: "", options: .literal, range: nil)
+        if(newString != "" ){
+            let model : Tempreature = Tempreature();
+            model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
+            model.Tag = sender.tag
+            model.Convert();
+            celsiusText.text = String(format: "%.04f", Float(model.Celsius))
+            kelvinText.text = String(format: "%.04f", Float(model.Kelvin))
+            fahrenheitText.text = String(format: "%.04f", Float(model.Farenhite))
+            
+        }
+        
     }
     
     
