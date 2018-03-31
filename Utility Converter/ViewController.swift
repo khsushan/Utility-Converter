@@ -28,9 +28,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         mainView.addSubview(getCreatedView(view: weightView))
         activeView = weightView;
-        
-        buttonOne.layer.borderWidth = 4
-        buttonOne.layer.borderColor = UIColor.gray.cgColor
+       // buttonOne.layer.borderWidth = 4
+       // buttonOne.layer.borderColor = UIColor.gray.cgColor
         
     }
     
