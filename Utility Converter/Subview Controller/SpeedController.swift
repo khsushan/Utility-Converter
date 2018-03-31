@@ -21,9 +21,9 @@ class SpeedController: BaseSubView {
         model.Input = Double(truncating: NumberFormatter().number(from: text)!)
         model.Tag = sender.tag
         model.Convert();
-        milesPerHourText.text = String(model.MilesPerHour)
-        kmPerHourText.text = String(model.KMPerHour)
-        meterPerSecText.text = String(model.MeterPerSec)
+        milesPerHourText.text = String(format: "%.04f", Float(model.MilesPerHour))
+        kmPerHourText.text = String(format: "%.04f", Float(model.KMPerHour))
+        meterPerSecText.text = String(format: "%.04f", Float(model.MeterPerSec))
     }
     
     

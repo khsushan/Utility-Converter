@@ -18,9 +18,9 @@ class TempreatureController: BaseSubView {
         model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
         model.Tag = sender.tag
         model.Convert();
-        celsiusText.text = String(model.Celsius)
-        kelvinText.text = String(model.Kelvin)
-        fahrenheitText.text = String(model.Farenhite)
+        celsiusText.text = String(format: "%.04f", Float(model.Celsius))
+        kelvinText.text = String(format: "%.04f", Float(model.Kelvin))
+        fahrenheitText.text = String(format: "%.04f", Float(model.Farenhite))
     }
     
     

@@ -20,9 +20,9 @@ class VolumeController: BaseSubView {
         model.Input = Double(truncating: NumberFormatter().number(from: text)!)
         model.Tag = sender.tag
         model.Convert();
-        cubicMeterText.text = String(model.CubicMeter)
-        cubicCentimeterText.text = String(model.CubicCentimeter)
-        literText.text = String(model.Liter)
+        cubicMeterText.text = String(format: "%.04f", Float(model.CubicMeter))
+        cubicCentimeterText.text = String(format: "%.04f", Float(model.CubicCentimeter))
+        literText.text = String(format: "%.04f", Float(model.Liter))
     }
     
     
