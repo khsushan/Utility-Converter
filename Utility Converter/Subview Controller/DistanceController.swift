@@ -17,8 +17,9 @@ class DistanceController: BaseSubView {
     @IBOutlet var yardText: UITextField!
     
     @IBAction func distanceViewEditChange(_ sender: UITextField) {
+        let text: String = StringFomatter.formatString(text: sender.text!)
         let model : Distance = Distance();
-        model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
+        model.Input = Double(truncating: NumberFormatter().number(from: text)!)
         model.Tag = sender.tag
         model.Convert();
         cmText.text = String(model.Cm)

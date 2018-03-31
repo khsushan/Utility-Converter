@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var toolBar: UIToolbar!
+
 
     @IBOutlet var mainView: UIView!
     @IBOutlet weak var weightView: WeightController!
@@ -88,7 +88,19 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let historyViewController = segue.destination as? HistoryViewController {
-            historyViewController.key = "Weight"
+            if (activeView  is WeightController){
+                historyViewController.key = Constant.WEIGHT_KEY;
+            }else if(activeView is TempreatureController){
+                historyViewController.key = Constant.TEMP_KEY
+            }else if(activeView is VolumeController){
+                historyViewController.key = Constant.VOLUME_KEY
+            }else if(activeView is VolumeLiquidController){
+                historyViewController.key = Constant.VOLUMELIQUID_KEY
+            }else if(activeView is DistanceController){
+                historyViewController.key = Constant.DISTANCE_KEY
+            }else if(activeView is SpeedController){
+                historyViewController.key = Constant.SPEED_KEY
+            }
         }
     }
 }

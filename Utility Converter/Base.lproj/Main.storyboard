@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--History View Controller-->
+        <!--History-->
         <scene sceneID="HC8-bT-cbQ">
             <objects>
                 <viewController id="ofd-gG-QeP" customClass="HistoryViewController" customModule="Utility_Converter" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,13 +43,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vDd-lS-FFz"/>
                     </view>
+                    <navigationItem key="navigationItem" title="History" id="1MN-NQ-sGz"/>
                     <connections>
+                        <outlet property="back" destination="1MN-NQ-sGz" id="hqe-Wf-37X"/>
                         <outlet property="historyTable" destination="Uhj-US-ALR" id="8LU-mE-TBd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMo-Pl-uBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-820" y="63"/>
+            <point key="canvasLocation" x="-820" y="62.518740629685162"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -159,9 +161,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tdu-7e-JsC">
                                                 <rect key="frame" x="0.0" y="150" width="119.5" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-0Y-PeO">
+                                                    <button opaque="NO" contentMode="topRight" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-0Y-PeO">
                                                         <rect key="frame" x="0.0" y="0.0" width="119.5" height="25"/>
-                                                        <state key="normal" title="Button" image="icons8-clear-symbol-80"/>
+                                                        <state key="normal" title="Button" image="Backspace"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36O-hN-Bp8">
                                                         <rect key="frame" x="0.0" y="25" width="119.5" height="25"/>
@@ -182,7 +184,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjb-oG-0b3">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="31"/>
-                                        <state key="normal" image="icons8-save-as-filled-50"/>
+                                        <state key="normal" image="Constant"/>
                                         <connections>
                                             <segue destination="iB2-kV-NAx" kind="show" id="LVW-xw-KKN"/>
                                         </connections>
@@ -206,7 +208,7 @@
                                     <constraint firstAttribute="width" secondItem="pLr-lr-tLh" secondAttribute="height" multiplier="1:1" id="nJT-h6-ixN"/>
                                     <constraint firstAttribute="width" constant="30" id="oRr-xs-Vqm"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="icons8-save-as-filled-50"/>
+                                <state key="normal" title="Button" image="History"/>
                                 <connections>
                                     <segue destination="ofd-gG-QeP" kind="show" id="7sp-DM-JTM"/>
                                 </connections>
@@ -379,8 +381,8 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="weightViewEditChange:" destination="zOW-Ta-eRw" eventType="editingChanged" id="tFw-fd-qO3"/>
-                                                        <action selector="weightViewEditingBegin:" destination="zOW-Ta-eRw" eventType="editingDidBegin" id="Vq6-Lt-c7T"/>
+                                                        <action selector="weightViewEditChange:" destination="zOW-Ta-eRw" eventType="editingChanged" id="dYv-Pp-CKa"/>
+                                                        <action selector="weightViewEditingBegin:" destination="zOW-Ta-eRw" eventType="editingDidBegin" id="4f7-rR-l7b"/>
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" tag="30000" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zWa-4x-YN5">
@@ -1004,7 +1006,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-clear-symbol-80" width="80" height="80"/>
+        <image name="Backspace" width="30" height="30"/>
+        <image name="Constant" width="30" height="30"/>
+        <image name="History" width="30" height="30"/>
         <image name="icons8-ruler-50" width="50" height="50"/>
         <image name="icons8-save-as-filled-50" width="50" height="50"/>
         <image name="icons8-speed-50" width="50" height="50"/>

@@ -42,6 +42,7 @@
 		5FFD2041206CD75700BFB5F7 /* SpeedConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2040206CD75700BFB5F7 /* SpeedConverter.swift */; };
 		5FFD2043206CD8DB00BFB5F7 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2042206CD8DB00BFB5F7 /* Speed.swift */; };
 		5FFD2045206CE5B700BFB5F7 /* TempreatureConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD2044206CE5B700BFB5F7 /* TempreatureConverter.swift */; };
+		9AE49D14206F31EE002E2F36 /* StringFomatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE49D13206F31EE002E2F36 /* StringFomatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		5FFD2040206CD75700BFB5F7 /* SpeedConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedConverter.swift; sourceTree = "<group>"; };
 		5FFD2042206CD8DB00BFB5F7 /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
 		5FFD2044206CE5B700BFB5F7 /* TempreatureConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempreatureConverter.swift; sourceTree = "<group>"; };
+		9AE49D13206F31EE002E2F36 /* StringFomatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFomatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				5F3011A5206D256300DBB4F7 /* UserDefaultHandler.swift */,
 				5F3011A7206E722B00DBB4F7 /* Constant.swift */,
+				9AE49D13206F31EE002E2F36 /* StringFomatter.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				5F3011A8206E722B00DBB4F7 /* Constant.swift in Sources */,
 				5FFD201A206A6CEA00BFB5F7 /* TempreatureEnum.swift in Sources */,
 				5FFD2027206BA98900BFB5F7 /* VolumeController.swift in Sources */,
+				9AE49D14206F31EE002E2F36 /* StringFomatter.swift in Sources */,
 				5FFD2035206BEF1400BFB5F7 /* Distance.swift in Sources */,
 				5F3011A3206D1DDE00DBB4F7 /* ConstantViewController.swift in Sources */,
 				5F3011A0206D035100DBB4F7 /* ConverterDelegate.swift in Sources */,

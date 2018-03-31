@@ -8,6 +8,7 @@
 
 import UIKit
 class HistoryViewController :  UIViewController, UITableViewDelegate, UITableViewDataSource{
+    @IBOutlet weak var back: UINavigationItem!
     
     @IBOutlet weak var historyTable: UITableView!
     

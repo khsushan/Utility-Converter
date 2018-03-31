@@ -16,8 +16,9 @@ class SpeedController: BaseSubView {
     
     
     @IBAction func speedViewEditChange(_ sender: UITextField) {
+        let text: String = StringFomatter.formatString(text: sender.text!)
         let model : Speed = Speed();
-        model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
+        model.Input = Double(truncating: NumberFormatter().number(from: texty)!)
         model.Tag = sender.tag
         model.Convert();
         milesPerHourText.text = String(model.MilesPerHour)

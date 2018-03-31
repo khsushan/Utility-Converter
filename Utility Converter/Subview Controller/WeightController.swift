@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeightController: BaseSubView {
+class WeightController: BaseSubView, UITextFieldDelegate {
    
     
     
@@ -19,17 +19,29 @@ class WeightController: BaseSubView {
     @IBOutlet weak var kgText: UITextField!
     @IBOutlet weak var stonePoundText: UITextField!
     
+    override init(frame:CGRect){
+        super.init(frame:frame)
+        poundText.delegate = self;
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     @IBAction func weightViewEditChange(_ sender: UITextField) {
-        let model : Weight 	= Weight();
-        model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
-        model.Tag = sender.tag
-        model.Convert();
-        ounceText.text = String(model.Ounce)
-        poundText.text = String(model.Pound)
-        stoneText.text = String(model.Stone)
-        gramText.text = String(model.Gram)
-        kgText.text = String(model.Kg)
-        stonePoundText.text = String(model.SmallPound)
+        let text: String = StringFomatter.formatString(text: sender.text!)
+        if(StringFomatter.isValidDouble(maxDecimalPlaces: 4, stringValue: text)){
+            let model : Weight     = Weight();
+            model.Input = Double(truncating: NumberFormatter().number(from:text)!)
+            model.Tag = sender.tag
+            model.Convert();
+            ounceText.text = String(model.Ounce)
+            poundText.text = String(model.Pound)
+            stoneText.text = String(model.Stone)
+            gramText.text = String(model.Gram)
+            kgText.text = String(model.Kg)
+            stonePoundText.text = String(model.SmallPound)
+        }
         
     }
     

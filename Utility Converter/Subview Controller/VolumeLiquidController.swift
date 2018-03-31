@@ -16,8 +16,9 @@ class VolumeLiquidController: BaseSubView {
     @IBOutlet var fluidOunceText: UITextField!
     
     @IBAction func volumeLiquidTextEditChange(_ sender: UITextField) {
+        let text: String = StringFomatter.formatString(text: sender.text!)
         let model : VolumeLiquid = VolumeLiquid();
-        model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
+        model.Input = Double(truncating: NumberFormatter().number(from: text)!)
         model.Tag = sender.tag
         model.Convert();
         galoonText.text = String(model.Galoon)

@@ -15,8 +15,9 @@ class VolumeController: BaseSubView {
     
     
     @IBAction func volumeViewEditChange(_ sender: UITextField) {
+        let text: String = StringFomatter.formatString(text: sender.text!)
         let model : Volume = Volume();
-        model.Input = Double(truncating: NumberFormatter().number(from: sender.text!)!)
+        model.Input = Double(truncating: NumberFormatter().number(from: text)!)
         model.Tag = sender.tag
         model.Convert();
         cubicMeterText.text = String(model.CubicMeter)
