@@ -39,10 +39,10 @@ class DistanceController: BaseSubView {
     
     override func save() {
         var saveRecord :  String = "";
-        saveRecord += "Centimeter : " + cmText.text! + " , ";
-        saveRecord += "Meter : " + meterText.text! + " , ";
-        saveRecord += "Inch : " + inchText.text! + " , ";
-        saveRecord += "Milimeter : " + mmText.text! + " , ";
+        saveRecord += "Centimeter : " + cmText.text! + " = ";
+        saveRecord += "Meter : " + meterText.text! + " = ";
+        saveRecord += "Inch : " + inchText.text! + " = ";
+        saveRecord += "Milimeter : " + mmText.text! + " = ";
         saveRecord += "Yard : " + yardText.text!
         UserDefaultsHandler.save(data: saveRecord, key: Constant.DISTANCE_KEY)
     }

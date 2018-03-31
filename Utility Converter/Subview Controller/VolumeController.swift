@@ -36,8 +36,8 @@ class VolumeController: BaseSubView {
     
     override func save() {
         var saveRecord :  String = "";
-        saveRecord += "Cubic Meter : " + cubicMeterText.text! + " , ";
-        saveRecord += "Cubic Centimeter : " + cubicCentimeterText.text! + " , ";
+        saveRecord += "Cubic Meter : " + cubicMeterText.text! + " = ";
+        saveRecord += "Cubic Centimeter : " + cubicCentimeterText.text! + " = ";
         saveRecord += "Liter  : " + literText.text!;
         UserDefaultsHandler.save(data: saveRecord, key: Constant.VOLUME_KEY)
     }

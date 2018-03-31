@@ -55,10 +55,10 @@ class WeightController: BaseSubView, UITextFieldDelegate {
     
     override func save() {
         var saveRecord :  String = "";
-        saveRecord += "Ounce : " + ounceText.text! + " , ";
-        saveRecord += "Pound : " + poundText.text! + " , ";
-        saveRecord += "Stone : " + stoneText.text! + " , ";
-        saveRecord += "Gram : " + gramText.text! + " , ";
+        saveRecord += "Ounce : " + ounceText.text! + " = ";
+        saveRecord += "Pound : " + poundText.text! + " = ";
+        saveRecord += "Stone : " + stoneText.text! + " = ";
+        saveRecord += "Gram : " + gramText.text! + " = ";
         saveRecord += "Kilo Gram : " + kgText.text!
         UserDefaultsHandler.save(data: saveRecord, key: Constant.WEIGHT_KEY)
     }

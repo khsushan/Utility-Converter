@@ -38,9 +38,9 @@ class VolumeLiquidController: BaseSubView {
     
     override func save() {
         var saveRecord :  String = "";
-        saveRecord += "Galoon : " + galoonText.text! + " , ";
-        saveRecord += "Liter : " + literLiquidText.text! + " , ";
-        saveRecord += "Pint  : " + pintText.text! ;
+        saveRecord += "Galoon : " + galoonText.text! + " = ";
+        saveRecord += "Liter : " + literLiquidText.text! + " = ";
+        saveRecord += "Pint  : " + pintText.text! + " = " ;
         saveRecord += "Fluid Ounce  : " + fluidOunceText.text!;
         UserDefaultsHandler.save(data: saveRecord, key: Constant.VOLUMELIQUID_KEY)
     }
