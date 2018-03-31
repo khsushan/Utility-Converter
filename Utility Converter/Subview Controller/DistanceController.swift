@@ -22,11 +22,11 @@ class DistanceController: BaseSubView {
         model.Input = Double(truncating: NumberFormatter().number(from: text)!)
         model.Tag = sender.tag
         model.Convert();
-        cmText.text = String(model.Cm)
-        meterText.text = String(model.Meter)
-        mmText.text = String(model.Mm)
-        yardText.text = String(model.Yard)
-        inchText.text = String(model.Inch)
+        cmText.text = String(format: "%.04f", Float(model.Cm))
+        meterText.text = String(format: "%.04f", Float(model.Meter))
+        mmText.text = String(format: "%.04f", Float(model.Mm))
+        yardText.text = String(format: "%.04f", Float(model.Yard))
+        inchText.text = String(format: "%.04f", Float(model.Inch))
     }
     
     @IBAction func distanceViewEditingBegin(_ sender: UITextField) {
