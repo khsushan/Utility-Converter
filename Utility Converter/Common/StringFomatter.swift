@@ -10,18 +10,21 @@ import Foundation
 class StringFomatter {
     
     class func formatString(text : String) -> String{
-        return text.trimmingCharacters(in: CharacterSet(charactersIn: "01234567890.").inverted)
+        var stringVal = text;
+        if(text.last == "."){
+            stringVal += "0"
+        }
+        return stringVal.trimmingCharacters(in: CharacterSet(charactersIn: "01234567890.").inverted)
     }
     
-    class func isValidDouble(maxDecimalPlaces: Int, stringValue : String) -> Bool {
-        let formatter = NumberFormatter()
-        formatter.allowsFloats = true
-        let decimalSeparator = formatter.decimalSeparator ?? "."
-        if formatter.number(from: stringValue) != nil {
-            let split = stringValue.components(separatedBy: decimalSeparator)
-            let digits = split.count == 2 ? split.last ?? "" : ""
-            return digits.characters.count <= maxDecimalPlaces
+    class func formatStringForTempreature(text : String) -> String{
+        var stringVal = text;
+        if(text.last == "."){
+            stringVal += "0"
         }
-        return false
+        if(text.first == "-" ){
+             return stringVal.trimmingCharacters(in: CharacterSet(charactersIn: "-01234567890.").inverted)
+        }
+        return stringVal.trimmingCharacters(in: CharacterSet(charactersIn: "01234567890.").inverted)
     }
 }

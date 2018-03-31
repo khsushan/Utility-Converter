@@ -28,9 +28,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         mainView.addSubview(getCreatedView(view: weightView))
         activeView = weightView;
-       // buttonOne.layer.borderWidth = 4
-       // buttonOne.layer.borderColor = UIColor.gray.cgColor
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -71,10 +68,48 @@ class ViewController: UIViewController {
     }
     
     @IBAction func keyboardButtonPress(_ sender: UIButton) {
-        activeView.currentTextField.text?.append(sender.currentTitle!)
-        activeView.editChanged(sender : activeView.currentTextField)
+        let textField: UITextField  = activeView.currentTextField;
+        if let selectedRange = textField.selectedTextRange {
+            var cursorPosition = textField.offset(from: textField.beginningOfDocument, to: selectedRange.start)
+            if(cursorPosition != 0){
+                var array = Array(textField.text!)
+                if(array.count == cursorPosition){
+                    cursorPosition = cursorPosition - 1;
+                }
+                let index = textField.text?.index(of: array[cursorPosition]) ;
+                activeView.currentTextField.text?.insert((sender.currentTitle?.last)!, at: index!)
+            }else{
+                activeView.currentTextField.text?.append(sender.currentTitle!)
+            }
+            
+            activeView.editChanged(sender : activeView.currentTextField)
+        }
+    }
+    @IBAction func backButtonAction(_ sender: UIButton) {
+        let textField: UITextField  = activeView.currentTextField;
+        if let selectedRange = textField.selectedTextRange {
+            
+            let cursorPosition = textField.offset(from:textField.beginningOfDocument, to: selectedRange.start)
+            var array = Array(textField.text!)
+            array.remove(at : cursorPosition-1)
+            textField.text = String(array)
+            print(String(array))
+            activeView.editChanged(sender: textField);
+            
+        }
+        
     }
     
+    @IBAction func negativeButtonAction(_ sender: UIButton) {
+        if(activeView is TempreatureController){
+            if(activeView.currentTextField.text?.first != "-"){
+                var array =  Array(activeView.currentTextField.text!);
+                array.insert("-", at: 0)
+                activeView.currentTextField.text = String(array)
+                activeView.editChanged(sender : activeView.currentTextField)
+            }
+        }
+    }
     func  getCreatedView(view : UIView) ->UIView{
         mainView.subviews.forEach {$0.removeFromSuperview()}
         view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: view.bounds.height)

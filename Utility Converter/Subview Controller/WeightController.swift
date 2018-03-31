@@ -29,19 +29,19 @@ class WeightController: BaseSubView, UITextFieldDelegate {
     }
     
     @IBAction func weightViewEditChange(_ sender: UITextField) {
+        print(sender.text!)
         let text: String = StringFomatter.formatString(text: sender.text!)
-        if(StringFomatter.isValidDouble(maxDecimalPlaces: 4, stringValue: text)){
             let model : Weight     = Weight();
             model.Input = Double(truncating: NumberFormatter().number(from:text)!)
             model.Tag = sender.tag
             model.Convert();
-            ounceText.text = String(model.Ounce)
-            poundText.text = String(model.Pound)
+            ounceText.text = String(format: "%.04f", Float(model.Ounce))
+            poundText.text = String(format: "%.04f", Float(model.Pound))
             stoneText.text = String(model.Stone)
-            gramText.text = String(model.Gram)
-            kgText.text = String(model.Kg)
+            gramText.text = String(format: "%.04f", Float(model.Gram))
+            kgText.text = String(format: "%.04f", Float(model.Kg))
             stonePoundText.text = String(model.SmallPound)
-        }
+    
         
     }
     
